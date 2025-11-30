@@ -49,7 +49,7 @@ smtp_server = smtplib.SMTP('smtp.gmail.com', 587)
 smtp_server.starttls()
 
 sender_mail = "solanki2899@gmail.com"
-password = os.environ['app_password']
+password = os.environ['EMAIL_PASSWORD']
 
 smtp_server.login(sender_mail, password)
 
@@ -76,3 +76,4 @@ smtp_server.quit()
 
 
     
+
