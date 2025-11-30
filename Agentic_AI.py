@@ -4,7 +4,7 @@ import os
 
 # 1. Fetch the 5 most recent papers in AI
 client = arxiv.Client()
-results = client.results(arxiv.Search(query="AI", max_results=10, sort_by = arxiv.SortCriterion.SubmittedDate))
+results = client.results(arxiv.Search(query="AI", max_results=5, sort_by = arxiv.SortCriterion.SubmittedDate))
 print("--- ArXiv Watchdog Papers Fetched ---")
 
 #%%
@@ -76,4 +76,5 @@ smtp_server.quit()
 
 
     
+
 
