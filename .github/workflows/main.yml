@@ -23,7 +23,7 @@ jobs:
           python-version: '3.11' 
 
       - name: 3. Install Python dependencies
-        run: pip install arxiv google-genai
+        run: pip install arxiv google-genai pandas smtplib
 
       - name: 4. Execute the Watchdog Script
         run: python Agentic_AI.py
